@@ -1,0 +1,8 @@
+<svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+    {{ range .Lines }}
+        <line x1="{{.X0}}" y1="{{.Y0}}" x2="{{.X1}}" y2="{{.Y1}}" stroke="green" />
+    {{end}}
+    {{ range .Points }}
+        <circle cx="{{.X}}" cy="{{.Y}}" r="3" stroke="black" stroke-width="1" fill="red"/>
+    {{end}}
+</svg>
